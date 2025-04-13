@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Traffic Stars</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
       <nav>
         <div class="nav_wrapper container">
-          <a href="#" class="nav_logo">
+          <a href="./index.html" class="nav_logo">
             <img src="./assets/logo.svg" alt="" />
           </a>
+
           <div class="nav_menu">
-            <p>About event</p>
-            <p>Venue</p>
-            <p>Past events</p>
-            <p>About TrafficStars</p>
-            <p>Future events</p>
+            <a href="#about">
+              <p>About event</p>
+            </a>
+
+            <a href="#venue"> <p>Venue</p></a>
+            <a href="#past"> <p>Past events</p></a>
+            <a href="#traffic-stars"> <p>About TrafficStars</p></a>
+            <a href="#future"> <p>Future events</p></a>
           </div>
+
           <button class="main_btn blue_btn">Enter the guest list</button>
           <button class="menu_btn" onclick="toggleMenu()">
             <img class="mob_menu_icon" src="./assets/icons/menu.svg" alt="" />
@@ -50,13 +60,17 @@
         </div>
       </div>
     </header>
+
     <div class="mob_menu">
       <div class="nav_menu">
-        <p>About event</p>
-        <p>Venue</p>
-        <p>Past events</p>
-        <p>About TrafficStars</p>
-        <p>Future events</p>
+        <a href="#about">
+          <p>About event</p>
+        </a>
+
+        <a href="#venue"> <p>Venue</p></a>
+        <a href="#past"> <p>Past events</p></a>
+        <a href="#traffic-stars"> <p>About TrafficStars</p></a>
+        <a href="#future"> <p>Future events</p></a>
       </div>
       <div class="mob_menu_btm">
         <button class="main_btn blue_btn">Enter the guest list</button>
@@ -66,7 +80,7 @@
       </div>
     </div>
 
-    <section class="about container">
+    <section class="about container" id="about">
       <div class="block_title">
         <h4>✦ About PlayStars Party</h4>
         <h2>
@@ -125,7 +139,7 @@
       </div>
     </section>
 
-    <section class="venue">
+    <section class="venue" id="venue">
       <div class="container">
         <div class="block_title">
           <h4>✦ Venue</h4>
@@ -154,94 +168,193 @@
       </div>
     </section>
 
-    <section class="parties">
+    <section class="parties" id="past">
       <div class="container">
         <div class="block_title">
           <h4>✦ Past parties</h4>
           <h2>PlayStars Parties</h2>
         </div>
 
-        <div class="parties_list">
-          <div class="party_card">
-            <img
-              class="party_card_bg"
-              src="./assets/images/party/1.png"
-              alt=""
-            />
-            <div class="party_card_desc">
-              <p>✦ March 11</p>
-              <h4>Sevilla ‘25</h4>
-              <span>Around TES Seville</span>
+        <div class="swiper parties_car">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/1.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ March 11</p>
+                  <h4>Sevilla ‘25</h4>
+                  <span>Around TES Seville</span>
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
             </div>
-            <a href="#"
-              ><button class="main_btn blue_btn">
-                <img src="./assets/icons/play.svg" alt="" />
-                See on YouTube
-              </button></a
-            >
-          </div>
-          <div class="party_card">
-            <img
-              class="party_card_bg"
-              src="./assets/images/party/2.png"
-              alt=""
-            />
-            <div class="party_card_desc">
-              <p>✦ February 26</p>
-              <h4>Dubai ‘25</h4>
-              <span
-                >Around AW Dubai <br />
-                Conference</span
-              >
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/2.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ February 26</p>
+                  <h4>Dubai ‘25</h4>
+                  <span
+                    >Around AW Dubai <br />
+                    Conference</span
+                  >
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
             </div>
-            <a href="#"
-              ><button class="main_btn blue_btn">
-                <img src="./assets/icons/play.svg" alt="" />
-                See on YouTube
-              </button></a
-            >
-          </div>
-          <div class="party_card">
-            <img
-              class="party_card_bg"
-              src="./assets/images/party/3.png"
-              alt=""
-            />
-            <div class="party_card_desc">
-              <p>✦ December 3—5</p>
-              <h4>Bangkok ‘24</h4>
-              <span
-                >Around AW Asia <br />
-                Conference</span
-              >
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/3.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ December 3—5</p>
+                  <h4>Bangkok ‘24</h4>
+                  <span
+                    >Around AW Asia <br />
+                    Conference</span
+                  >
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
             </div>
-            <a href="#"
-              ><button class="main_btn blue_btn">
-                <img src="./assets/icons/play.svg" alt="" />
-                See on YouTube
-              </button></a
-            >
-          </div>
-          <div class="party_card">
-            <img
-              class="party_card_bg"
-              src="./assets/images/party/4.png"
-              alt=""
-            />
-            <div class="party_card_desc">
-              <p>✦ November 13</p>
-              <h4>Malta ‘24</h4>
-              <span
-                >Around Sigma <br />
-                Conference</span
-              >
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/4.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ November 13</p>
+                  <h4>Malta ‘24</h4>
+                  <span
+                    >Around Sigma <br />
+                    Conference</span
+                  >
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
             </div>
-            <a href="#"
-              ><button class="main_btn blue_btn">
-                <img src="./assets/icons/play.svg" alt="" />
-                See on YouTube
-              </button></a
-            >
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/1.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ March 11</p>
+                  <h4>Sevilla ‘25</h4>
+                  <span>Around TES Seville</span>
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/2.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ February 26</p>
+                  <h4>Dubai ‘25</h4>
+                  <span
+                    >Around AW Dubai <br />
+                    Conference</span
+                  >
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/3.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ December 3—5</p>
+                  <h4>Bangkok ‘24</h4>
+                  <span
+                    >Around AW Asia <br />
+                    Conference</span
+                  >
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="party_card">
+                <img
+                  class="party_card_bg"
+                  src="./assets/images/party/4.png"
+                  alt=""
+                />
+                <div class="party_card_desc">
+                  <p>✦ November 13</p>
+                  <h4>Malta ‘24</h4>
+                  <span
+                    >Around Sigma <br />
+                    Conference</span
+                  >
+                </div>
+                <a href="#"
+                  ><button class="main_btn blue_btn">
+                    <img src="./assets/icons/play.svg" alt="" />
+                    See on YouTube
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -269,7 +382,7 @@
       </div>
     </div>
 
-    <section class="traffistars">
+    <section class="traffistars" id="traffic-stars">
       <img
         class="traffistars_top"
         src="./assets/images/traffic-top.svg"
@@ -347,7 +460,7 @@
       </div>
     </section>
 
-    <section class="future container">
+    <section class="future container" id="future">
       <div class="block_title">
         <h4>✦ Future parties</h4>
         <h2>
@@ -413,10 +526,16 @@
         document
           .querySelector(".mob_menu")
           .classList.toggle("mob_menu_visible");
-        document
-          .querySelector(".menu_btn")
-          .classList.toggle("menu_btn_close");
+        document.querySelector(".menu_btn").classList.toggle("menu_btn_close");
       }
     </script>
+
+    <script>
+      const swiper = new Swiper(".parties_car", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+      });
+    </script>
+  
   </body>
 </html>

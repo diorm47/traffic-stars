@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Stolzl", sans-serif;
   background: rgb(255, 255, 255);
@@ -242,6 +246,12 @@ section {
   justify-content: space-between;
   align-items: start;
 }
+.swiper {
+  overflow: visible !important;
+}
+.parties {
+  overflow: hidden;
+}
 
 .about_card p {
   color: rgb(2, 2, 2);
@@ -308,8 +318,6 @@ section {
   overflow: hidden;
 }
 .party_card {
-  width: 100%;
-  height: 360px;
   max-width: 325px;
   border-radius: 16px;
   padding: 20px;
@@ -319,6 +327,11 @@ section {
   align-items: start;
   justify-content: space-between;
   flex-direction: column;
+}
+.swiper-slide,
+.party_card {
+  width: 325px !important;
+  height: 360px !important;
 }
 
 .party_card_bg {
@@ -633,6 +646,7 @@ footer .header_btm {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   background: rgb(251, 251, 251);
   width: 100%;
   height: 100vh;
@@ -699,6 +713,10 @@ footer .header_btm {
   display: none;
 }
 
+.swiper {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     padding-left: 40px;
@@ -732,7 +750,7 @@ footer .header_btm {
     top: 0;
     width: 100%;
     margin-bottom: 0;
-    z-index: 1;
+    z-index: 3;
   }
   .header_wrapper {
     padding-top: 220px;
@@ -751,6 +769,17 @@ footer .header_btm {
   }
   .about_left {
     height: 580px;
+  }
+  .venue {
+    position: relative;
+    padding-bottom: 460px;
+  }
+  .venue_gallery {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .venue_gallery div {
     display: flex;
@@ -825,6 +854,17 @@ footer .header_btm {
     width: 270px;
     height: 270px;
   }
+  .venue {
+    position: relative;
+    padding-bottom: 370px;
+  }
+  .venue_gallery {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .party_card {
     width: 270px;
   }
@@ -852,5 +892,10 @@ footer .header_btm {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+  .swiper-slide,
+  .party_card {
+    width: 270px !important;
+    height: 360px !important;
   }
 }
