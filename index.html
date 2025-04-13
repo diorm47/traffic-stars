@@ -21,6 +21,14 @@
             <p>Future events</p>
           </div>
           <button class="main_btn blue_btn">Enter the guest list</button>
+          <button class="menu_btn" onclick="toggleMenu()">
+            <img class="mob_menu_icon" src="./assets/icons/menu.svg" alt="" />
+            <img
+              class="close_menu_icon"
+              src="./assets/icons/close-menu.svg"
+              alt=""
+            />
+          </button>
         </div>
       </nav>
       <div class="header_wrapper">
@@ -42,6 +50,21 @@
         </div>
       </div>
     </header>
+    <div class="mob_menu">
+      <div class="nav_menu">
+        <p>About event</p>
+        <p>Venue</p>
+        <p>Past events</p>
+        <p>About TrafficStars</p>
+        <p>Future events</p>
+      </div>
+      <div class="mob_menu_btm">
+        <button class="main_btn blue_btn">Enter the guest list</button>
+        <p>Admission by invitation only</p>
+        <h4>PlayStars Pleasure Bay</h4>
+        <h5>May 29 • 19:00—01:00 • 19:00—01:00</h5>
+      </div>
+    </div>
 
     <section class="about container">
       <div class="block_title">
@@ -115,16 +138,18 @@
           </p>
           <a href="#">Location address</a>
         </div>
-        <div class="venue_top_gal">
-          <img src="./assets/images/venue/1.jpg" alt="" />
-          <img src="./assets/images/venue/2.jpg" alt="" />
-        </div>
-        <div class="venue_btm_gal">
-          <img src="./assets/images/venue/3.png" alt="" />
+        <div class="venue_gallery">
+          <div class="venue_top_gal">
+            <img src="./assets/images/venue/1.jpg" alt="" />
+            <img src="./assets/images/venue/2.jpg" alt="" />
+          </div>
+          <div class="venue_btm_gal">
+            <img src="./assets/images/venue/3.png" alt="" />
 
-          <img src="./assets/images/venue/4.png" alt="" />
+            <img src="./assets/images/venue/4.png" alt="" />
 
-          <img src="./assets/images/venue/5.png" alt="" />
+            <img src="./assets/images/venue/5.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -382,5 +407,16 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        document
+          .querySelector(".mob_menu")
+          .classList.toggle("mob_menu_visible");
+        document
+          .querySelector(".menu_btn")
+          .classList.toggle("menu_btn_close");
+      }
+    </script>
   </body>
 </html>
