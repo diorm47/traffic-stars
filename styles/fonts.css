@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Stolzl";
+  src: url("../assets/fonts/stolzl_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sloop";
+  src: url("../assets/fonts/Sloop-ScriptThree.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Perandory";
+  src: url("../assets/fonts/PerandorySemiCondensed.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
