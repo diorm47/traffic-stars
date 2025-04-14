@@ -94,11 +94,22 @@ nav {
 }
 
 header {
-  background: url(../assets/images/header-bg.jpg);
+  /* background: url(../assets/images/header-bg.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   padding-bottom: 40px;
   min-height: 100vh;
+  position: relative;
+}
+.header_vid {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;  object-fit: cover; 
+}
+nav, .header_wrapper {
+  position: relative;
 }
 
 .header_main h2 {
@@ -222,12 +233,17 @@ section {
   gap: 20px;
 }
 
-.about_left {
+/* .about_left {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
-}
+} */
+ .about_left {
+  width: 100%;
+  object-fit: cover;
+  height: 580px;border-radius: 16px;
+ }
 
 .about_right {
   display: grid;
@@ -381,11 +397,17 @@ a {
 
 .follow_us {
   padding-bottom: 60px;
-  background: url(../assets/images/follow-bg.jpg);
+  position: relative;
+  /* background: url(../assets/images/follow-bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
-
+.follow_us .block_title {
+  position: relative;
+}
+.follow_us .header_vid {
+  object-position: 50% 30%
+}
 .follow_us h4,
 .follow_us h2 {
   color: rgb(255, 255, 255);
@@ -600,9 +622,13 @@ a {
 
 footer {
   padding: 80px 0 40px;
-  background: url(../assets/images/footer-bg.jpg);
+  position: relative;
+  /* background: url(../assets/images/footer-bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+}
+footer .container {
+  position: relative;
 }
 
 footer .header_btm {
