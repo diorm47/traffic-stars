@@ -106,9 +106,11 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;  object-fit: cover; 
+  height: 100%;
+  object-fit: cover;
 }
-nav, .header_wrapper {
+nav,
+.header_wrapper {
   position: relative;
 }
 
@@ -239,11 +241,12 @@ section {
   object-fit: cover;
   border-radius: 16px;
 } */
- .about_left {
+.about_left {
   width: 100%;
   object-fit: cover;
-  height: 580px;border-radius: 16px;
- }
+  height: 580px;
+  border-radius: 16px;
+}
 
 .about_right {
   display: grid;
@@ -406,7 +409,7 @@ a {
   position: relative;
 }
 .follow_us .header_vid {
-  object-position: 50% 30%
+  object-position: 50% 30%;
 }
 .follow_us h4,
 .follow_us h2 {
@@ -850,7 +853,7 @@ footer .header_btm {
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
   .mob_menu {
     gap: 70px;
   }
